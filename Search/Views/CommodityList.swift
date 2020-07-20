@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct CommodityList: View {
-    var showProducts: [Procuct] = []
+    
+    ///搜索匹配后的商品
+    var showProducts: [Product] = []
     
     var body: some View {
         VStack {

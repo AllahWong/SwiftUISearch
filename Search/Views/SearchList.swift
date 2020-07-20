@@ -12,6 +12,8 @@ import Combine
 
 
 struct SearchList: View {
+    
+    ///品牌过滤的关键字，和  SearchBar显示的内容 绑定
     @State var searchText = "Dyson"
         
     init() {

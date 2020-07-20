@@ -32,7 +32,10 @@ extension View {
 
 fileprivate struct SearchBar<ResultContent: View>: UIViewControllerRepresentable {
     @Binding
+    /// SearchBar 中的文本
     var text: String
+    
+    /// SearchBar的默认显示
     let placeholder: String?
     let hidesNavigationBarDuringPresentation: Bool
     let hidesSearchBarWhenScrolling: Bool
@@ -64,6 +67,7 @@ fileprivate struct SearchBar<ResultContent: View>: UIViewControllerRepresentable
 
     class Coordinator: NSObject, UISearchResultsUpdating {
         @Binding
+        /// SearchBar 中的文本
         var text: String
         let searchController: UISearchController
 

@@ -24,7 +24,6 @@
 		3DA426E824C01C4200512DAC /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA426E724C01C4200512DAC /* SearchList.swift */; };
 		3DA426EA24C01D2D00512DAC /* CommodityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA426E924C01D2D00512DAC /* CommodityRow.swift */; };
 		3DA426ED24C0308F00512DAC /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA426EC24C0308F00512DAC /* SearchListViewModel.swift */; };
-		3DC84D0A24C1FC0D004F3CD1 /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DC84D0924C1FC0D004F3CD1 /* City.plist */; };
 		CD5E1C7BF2CDDC2B64A24C8F /* Pods_SearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9023ABD303710ACE0ED360CD /* Pods_SearchTests.framework */; };
 		D2DB51E2CA2DA14978E868A4 /* Pods_Search_SearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8523F9693D7C9B77758509 /* Pods_Search_SearchUITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,7 +71,6 @@
 		3DA426E724C01C4200512DAC /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
 		3DA426E924C01D2D00512DAC /* CommodityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityRow.swift; sourceTree = "<group>"; };
 		3DA426EC24C0308F00512DAC /* SearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewModel.swift; sourceTree = "<group>"; };
-		3DC84D0924C1FC0D004F3CD1 /* City.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
 		46A5CAE56442419E3D57BC2D /* Pods-Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search.debug.xcconfig"; path = "Target Support Files/Pods-Search/Pods-Search.debug.xcconfig"; sourceTree = "<group>"; };
 		9023ABD303710ACE0ED360CD /* Pods_SearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8523F9693D7C9B77758509 /* Pods_Search_SearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_SearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +157,6 @@
 				3DA426B924C0098B00512DAC /* LaunchScreen.storyboard */,
 				3DA426BC24C0098B00512DAC /* Info.plist */,
 				3DA426B624C0098B00512DAC /* Preview Content */,
-				3DC84D0924C1FC0D004F3CD1 /* City.plist */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -345,7 +342,6 @@
 				3D90BE9624C5531200B6686D /* README.md in Resources */,
 				3D6577D224C2AF3C000C9B38 /* CommodityData.json in Resources */,
 				3DA426BB24C0098B00512DAC /* LaunchScreen.storyboard in Resources */,
-				3DC84D0A24C1FC0D004F3CD1 /* City.plist in Resources */,
 				3DA426B824C0098B00512DAC /* Preview Assets.xcassets in Resources */,
 				3DA426B524C0098B00512DAC /* Assets.xcassets in Resources */,
 			);
@@ -662,7 +658,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W97BQE2Y2U;
 				INFOPLIST_FILE = SearchTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,6 +669,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Allah.SearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Search.app/Search";
@@ -684,7 +683,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W97BQE2Y2U;
 				INFOPLIST_FILE = SearchTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -694,6 +695,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Allah.SearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Search.app/Search";
@@ -706,6 +709,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W97BQE2Y2U;
 				INFOPLIST_FILE = SearchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -725,7 +729,8 @@
 			baseConfigurationReference = AE508F4908A8A547717AF560 /* Pods-Search-SearchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SearchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -734,6 +739,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Allah.SearchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Search;

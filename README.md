@@ -9,6 +9,7 @@
 ---
  预览
 ---
- ![image](https://github.com/AllahWong/NestedScrollView/blob/master/preview.png)
+ ![image](https://github.com/AllahWong/SwiftUISearch/blob/master/search1.jpeg)
 ----
+![image](https://github.com/AllahWong/SwiftUISearch/blob/master/search2.jpeg)
 ----
