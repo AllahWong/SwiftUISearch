@@ -11,6 +11,7 @@
 		3D6577D224C2AF3C000C9B38 /* CommodityData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6577D124C2AF3C000C9B38 /* CommodityData.json */; };
 		3D90BE9024C42BD200B6686D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90BE8F24C42BD200B6686D /* SearchBar.swift */; };
 		3D90BE9424C543AD00B6686D /* CommodityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90BE9324C543AD00B6686D /* CommodityList.swift */; };
+		3D90BE9624C5531200B6686D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D90BE9524C5531200B6686D /* README.md */; };
 		3DA426AF24C0098600512DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA426AE24C0098600512DAC /* AppDelegate.swift */; };
 		3DA426B124C0098600512DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA426B024C0098600512DAC /* SceneDelegate.swift */; };
 		3DA426B324C0098600512DAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA426B224C0098600512DAC /* ContentView.swift */; };
@@ -52,6 +53,7 @@
 		3D6577D124C2AF3C000C9B38 /* CommodityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CommodityData.json; sourceTree = "<group>"; };
 		3D90BE8F24C42BD200B6686D /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		3D90BE9324C543AD00B6686D /* CommodityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityList.swift; sourceTree = "<group>"; };
+		3D90BE9524C5531200B6686D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3DA426AB24C0098600512DAC /* Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Search.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA426AE24C0098600512DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA426B024C0098600512DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		3DA426AD24C0098600512DAC /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				3D90BE9524C5531200B6686D /* README.md */,
 				3DA426EB24C0306500512DAC /* ViewModels */,
 				3DA426E624C01C2200512DAC /* Views */,
 				3DA426E124C00C2500512DAC /* Resources */,
@@ -339,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D90BE9624C5531200B6686D /* README.md in Resources */,
 				3D6577D224C2AF3C000C9B38 /* CommodityData.json in Resources */,
 				3DA426BB24C0098B00512DAC /* LaunchScreen.storyboard in Resources */,
 				3DC84D0A24C1FC0D004F3CD1 /* City.plist in Resources */,
