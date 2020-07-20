@@ -37,7 +37,7 @@ class SearchListViewModel {
     ///   - result: 文件中的数据
     static func jsonDataForResource(resource:String,type: String, result:(_ data: Data?, _ error: Error?, _ success: Bool) -> Void) {
         guard let path = Bundle.main.path(forResource: resource, ofType: type) else {
-            print("读取Resource文件 失败：path == nil")
+            print("读取Resource文件:\(resource).\(type)失败：path == nil")
             return
         }
         
