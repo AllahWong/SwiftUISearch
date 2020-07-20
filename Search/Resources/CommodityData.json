@@ -1,0 +1,34 @@
+[{
+        "id":0,
+        "speciality": "Vacuum",
+        "commoditys": [{
+                "id": 1001,
+                "name": "V11",
+                "state": "in-stock",
+                "price": "$599.99",
+                "brand": "Dyson",
+                "instock": true
+            },
+            {
+                "id": 1002,
+                "name": "V10",
+                "state": "out-of-stock",
+                "price": "$399.99",
+                "brand": "Dyson",
+                "instock": false
+            }
+        ]
+    },
+    {
+        "id":1,
+        "speciality": "Hair Dryer",
+        "commoditys": [{
+            "id": 1003,
+            "name": "Supersonic",
+            "state": "in-stock",
+            "price": "$399.99",
+            "brand": "Dyson",
+            "instock": true
+        }]
+    }
+]
